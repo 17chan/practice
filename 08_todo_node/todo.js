@@ -8,14 +8,14 @@ const todoList = [];
 while (true) {
 
     add = prompt('タスクを追加しますか y/n');
- 
+
     if (add == "y") {
         const name = prompt('タスクを追加してください');
 
         console.log(`${name}を追加しました`);
 
         // ① todoListの配列の最後にどんどん追加したい。が、再代入(上書き)がされている状況
-        todoList.push = name;
+        todoList.push(name);
         console.log(todoList);
 
         // ② 下記のforeachが実行されていない...?

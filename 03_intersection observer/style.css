@@ -1,0 +1,16 @@
+body {
+    height: 20000px;
+    background-color: gray;
+}
+.ob01 {
+    width: 100%;
+    height: 800px;
+}
+.ob02 {
+    width: 300px;
+    height: 500px;
+    background-color: hotpink;
+}
+.inview {
+    background-color: indigo;
+}

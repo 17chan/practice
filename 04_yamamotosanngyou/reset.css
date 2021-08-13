@@ -1,0 +1,39 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+fieldset {
+	border: none;
+}
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.8;
+	font-size: 88%;
+}
+
+h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, li, ol,
+form, input, select {	margin: 0; 	padding: 0; }
+
+img {
+	border: none;
+	vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+}
+
+em {	font-style: normal; }
+
+ul li {
+	list-style-type: none;
+	list-style-image: none;
+}
+
+address  {
+	font-style:normal;
+}

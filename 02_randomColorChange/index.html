@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random color change</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="button">カラー変更</button>
+    <div class="rectangle"></div>
+
+
+    <script>
+        const rectangle = document.querySelector(".rectangle");
+
+        document.querySelector(".button").addEventListener("click", onClickButton);
+        function onClickButton() {
+            const randomHue = Math.trunc(Math.random() * 360);
+            const randomColorStart = `hsl(${randomHue}, 100%, 50%)`;
+            const randomColorEnd = `hsl(${randomHue + 40}, 100%, 50%)`;
+            rectangle.style.setProperty("--start", randomColorStart);
+            rectangle.style.setProperty("--end", randomColorEnd);
+        }
+
+
+
+
+    </script>
+</body>
+</html>

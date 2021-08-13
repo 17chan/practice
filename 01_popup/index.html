@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creative hover with overlay effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="portfolio">
+
+        <div class="project">
+            <div >
+                <img src="sample (1).png" alt="">
+            </div>
+            <div class="grid-overlay">
+                <button class="viewbutton">view more</button>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="sample (2).png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">view more</button>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="sample (3).png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">view more</button>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="sample (4).png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">view more</button>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="sample (5).png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">view more</button>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="sample (6).png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">view more</button>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="sample (7).png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">view more</button>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="sample (8).png" alt="" class="project-image">
+            <div class="grid-overlay">
+                <button class="viewbutton">view more</button>
+            </div>
+        </div>
+
+        <div class="overlay">
+            <div class="overlay-inner">
+                <img src="" alt="">
+                <button class="close">close X</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+
+        const buttons = document.querySelectorAll(".project");
+        const overlay = document.querySelector(".overlay");
+        const overlayImage = document.querySelector(".overlay-inner img");
+
+
+        function open(e) {
+            overlay.classList.add("open");
+            const src = e.currentTarget.querySelector("img").src;
+            overlayImage.src = src;
+        }
+
+        function close () {
+            overlay.classList.remove("open");
+
+        }
+        buttons.forEach(button => button.addEventListener("click", open));
+        overlay.addEventListener("click", close);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

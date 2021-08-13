@@ -28,7 +28,6 @@ while (true) {
         break;
 
 
-
     } else {
         console.log("ちゃんと入力してください y/n");
     }
